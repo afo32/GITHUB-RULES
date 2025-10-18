@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github comandos</title>
+    <title>Git</title>
 </head>
 
 <body>
     <main>
-        <ul>
+        <ul> <h1>Reglas</h1>
+            <li>Lo q no te toca, no se toca</li>
+            <li>Nunca se trabaja en main</li>
+            <li>Nunca se trabaja en develop</li>
+            <li>Siempre se hace el push a la rama de trabajo</li>
+            <li>Las ramas de trabajo tienen q tener nombres descriptivos</li>
+            <li>Los mensajes del commit, tienen q tener nombres descriptivos</li>
+            <li>Antes de un push va un pull</li>
+            <li>Antes de comenzar a trabajar en tu rama, hacer un pull de develop</li>
+            <li>Cada vez q alguien modifique develop, hacer un pull</li>
+        </ul>
+
+        <ul> <h1>Comandos</h1>
             <li>
                 <h1>git remote</h1>
                 <p>se usa para administrar conexiones a otros repositorios (remotos), como crearlas, verlas y
@@ -55,6 +67,13 @@
                 <p>Uso: Agregar al commit todo lo nuevo q has escrito</p>
             </li>
             <li>
+                <h1>git reset</h1>
+                <p>se usa para deshacer cambios en tu repositorio, moviendo el HEAD a un commit específico. Tiene tres
+                    modos principales: --soft (mantiene los cambios en el área de staging), --mixed (mantiene los
+                    cambios en el árbol de trabajo pero los saca del área de staging), y --hard (descarta todos los
+                    cambios tanto del área de staging como del árbol de trabajo)</p>
+            </li>
+            <li>
                 <h1>git commit</h1>
                 <p>Llama a git commit para crear el objeto de confirmación. El nuevo commit object tendrá el HEAD actual
                     como su principal (después de que se complete el commit, el HEAD apuntará al nuevo commit object).
@@ -97,9 +116,7 @@
                     almacenados en la nueva HEAD commit.</p>
                 <p>Uso: establecer el head en la rama q se ha creado</p>
             </li>
-            <li>
-                <h1></h1>
-            </li>
+
         </ul>
     </main>
 </body>
