@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github comandos</title>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li>
+                <h1>git remote</h1>
+                <p>se usa para administrar conexiones a otros repositorios (remotos), como crearlas, verlas y
+                    eliminarlas. Permite usar nombres cortos (como origin) en lugar de las URL completas en otros
+                    comandos de Git como fetch, pull y push. Las opciones comunes incluyen git remote -v para ver las
+                    URL de los remotos y git remote add <nombre>
+                        <url> para agregar uno nuevo</p>
+                <p>Uso: Ver conexiones remotas:
+                    git remote: Muestra los nombres cortos de todos los repositorios remotos configurados.
+                    git remote -v: Muestra los nombres cortos junto con sus URL de origen (fetch) y destino (push).
+                    Agregar una conexión remota:
+                    git remote add <nombre>
+                        <url>: Añade una nueva conexión a un repositorio remoto. Por ejemplo, git remote add mi-remoto
+                            https://github.com/usuario/mi-repo.git.
+                            Cambiar el nombre de un remoto:
+                            git remote rename <nombre_antiguo>
+                                <nuevo_nombre>: Cambia el nombre de un remoto existente. Por ejemplo, git remote rename
+                                    origin github.
+                                    Eliminar una conexión remota:
+                                    git remote rm <nombre>: Elimina una conexión remota existente.
+                                        Mostrar detalles de un remoto específico:
+                                        git remote show <nombre>: Muestra información detallada sobre un remoto en
+                                            particular, como su URL de obtención y la rama principa</p>
+            </li>
+            <li>
+                <h1>git init</h1>
+                <p>Puedes crear un nuevo repositorio cuando lo desees durante el proyecto, ¡no tiene que ser al
+                    principio! Lo único esencial para hacer esto es que el proyecto no tenga otro repositorio ya creado.
+
+                    Para crear un repositorio, navega en tu línea de comando al directorio raíz del proyecto y ejecuta
+                    el comando git init. Recuerda que el directorio no necesita estar vacío.
+                    Esto creará un directorio .git en el directorio del proyecto. Asegúrate de que la carpeta se haya
+                    creado correctamente (puedes ejecutar el comando ls -a para leer el contenido del directorio en la
+                    línea de comandos).</p>
+                <p>Uso: Crear un nuevo repositorio </p>
+            </li>
+            <li>
+                <h1>git add .</h1>
+                <p>Indícale a GIT qué archivos incluir en el commit, con git add .. Si un archivo no ha cambiado desde
+                    el commit anterior (el commit "principal"), GIT lo incluirá automáticamente en el commit que estás a
+                    punto de realizar. Solo deberás agregar los archivos que hayas creado o modificado recientemente.
+                    Ten en cuenta que agrega directorios de forma recursiva, así que git add . agregará todo lo que ha
+                    cambiado.</p>
+                <p>Uso: Agregar al commit todo lo nuevo q has escrito</p>
+            </li>
+            <li>
+                <h1>git commit</h1>
+                <p>Llama a git commit para crear el objeto de confirmación. El nuevo commit object tendrá el HEAD actual
+                    como su principal (después de que se complete el commit, el HEAD apuntará al nuevo commit object).
+                </p>
+                <p>Uso: despues de usar git add . , se utiliza git commit -m "lo q sea" para agregar lo nuevo al commit.
+                    IMPORTANTE siempre poner -m despues de commit</p>
+            </li>
+            <li>
+                <h1>git push</h1>
+                <p>es un comando que envía los cambios confirmados localmente (los "commits") a un repositorio remoto.
+                    Es parte del flujo de trabajo colaborativo, permitiendo que otros
+                    desarrolladores accedan a tus actualizaciones después de haber confirmado los cambios en tu máquina
+                    local. La sintaxis básica es {git push <remoto>
+                        <rama>}</p>
+                <p>Uso: subir los commits desde tu rama (branch) local en tu repositorio git local al repositorio
+                    remoto.</p>
+            </li>
+            <li>
+                <h1>git log</h1>
+                <p>muestra un registro de todos los commits desde HEAD hasta el commit inicial</p>
+                <p>Uso: mostrar el registro de commits q se hayan hecho en el proyecto</p>
+            </li>
+            <li>
+                <h1>git status</h1>
+                <p>muestra qué archivos han cambiado entre el estado actual del proyecto y el HEAD. Los archivos se
+                    clasifican en una de las tres categorías: (1) Archivos nuevos que no se han agregado (con git add),
+                    (2) Archivos modificados que no se han agregado y (3) Archivos que se han agregado</p>
+                <p>Uso: los cambios en los commits del repositorio</p>
+            </li>
+            <li>
+                <h1>git diff</h1>
+                <p>muestra la diferencia entre el HEAD y el estado actual del proyecto. Con la opción --cached, compara
+                    archivos agregados contra HEAD; de lo contrario, compara los archivos que aún no se han agregado</p>
+                <p>Uso: comparar lo q estaba hecho vs lo q has hecho nuevo</p>
+            </li>
+            <li>
+                <h1>git checkout [head-name]</h1>
+                <p>Apunta al HEAD del commit object especificado por [head-name].
+                    Vuelve a escribir todos los archivos en el directorio para que coincidan con los archivos
+                    almacenados en la nueva HEAD commit.</p>
+                <p>Uso: establecer el head en la rama q se ha creado</p>
+            </li>
+            <li>
+                <h1></h1>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
